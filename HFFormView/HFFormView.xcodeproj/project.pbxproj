@@ -155,16 +155,7 @@
 				5570E9971BD5EACE006F55B0 /* AppDelegate.m */,
 				5570E9991BD5EACE006F55B0 /* ViewController.h */,
 				5570E99A1BD5EACE006F55B0 /* ViewController.m */,
-				5541C8121BD5F1D600A42AD5 /* HFFormModel.h */,
-				5541C8131BD5F1D600A42AD5 /* HFFormModel.m */,
-				5541C80F1BD5F1C400A42AD5 /* HFFormView.h */,
-				5541C8101BD5F1C400A42AD5 /* HFFormView.m */,
-				5541C8151BD61E2400A42AD5 /* LabelWithTextField.h */,
-				5541C8161BD61E2400A42AD5 /* LabelWithTextField.m */,
-				5541C8181BD61E4500A42AD5 /* TextFieldWithLine.h */,
-				5541C8191BD61E4500A42AD5 /* TextFieldWithLine.m */,
-				5541C81B1BD6205E00A42AD5 /* UITextField+Extra.h */,
-				5541C81C1BD6205E00A42AD5 /* UITextField+Extra.m */,
+				55BFCC051BD77B99002D8396 /* HFFormView */,
 				5570E9C61BD5EB4E006F55B0 /* MJExtension */,
 				5570E99C1BD5EACE006F55B0 /* Main.storyboard */,
 				5570E99F1BD5EACE006F55B0 /* Assets.xcassets */,
@@ -230,6 +221,23 @@
 				5570E9DD1BD5EB4E006F55B0 /* NSString+MJExtension.m */,
 			);
 			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		55BFCC051BD77B99002D8396 /* HFFormView */ = {
+			isa = PBXGroup;
+			children = (
+				5541C8121BD5F1D600A42AD5 /* HFFormModel.h */,
+				5541C8131BD5F1D600A42AD5 /* HFFormModel.m */,
+				5541C80F1BD5F1C400A42AD5 /* HFFormView.h */,
+				5541C8101BD5F1C400A42AD5 /* HFFormView.m */,
+				5541C8151BD61E2400A42AD5 /* LabelWithTextField.h */,
+				5541C8161BD61E2400A42AD5 /* LabelWithTextField.m */,
+				5541C8181BD61E4500A42AD5 /* TextFieldWithLine.h */,
+				5541C8191BD61E4500A42AD5 /* TextFieldWithLine.m */,
+				5541C81B1BD6205E00A42AD5 /* UITextField+Extra.h */,
+				5541C81C1BD6205E00A42AD5 /* UITextField+Extra.m */,
+			);
+			name = HFFormView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

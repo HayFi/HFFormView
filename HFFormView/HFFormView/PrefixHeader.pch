@@ -11,13 +11,14 @@
 
 #define HF_GreenColor [UIColor colorWithRed:21.0 / 255.0 green:156.0 / 255.0 blue:115.0 / 255.0 alpha:1]
 
+#define HF_TwitterColor [UIColor colorWithRed:0.0/255.0 green:171.0/255.0 blue:243.0/255.0 alpha:1.0]
+
+
 #define FONT_SIZE_15 [UIFont systemFontOfSize:15]
 
 #import <UIKit/UIKit.h>
 
 #import "MJExtension.h"
-
-#import "UITextField+Extra.h"
 
 #import "HFFormModel.h"
 

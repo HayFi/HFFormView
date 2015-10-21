@@ -10,8 +10,22 @@
 
 @interface HFFormView : UIView
 
+/**
+ *  初始化表格
+ *
+ *  @param frame      可定制位置和宽度，高度根具数据源来确定
+ *  @param dataSource 数据源
+ *  @param styleModel 表格样式，根据HFFormModel中的属性进行调整
+ *
+ *  @return return value description
+ */
 - (instancetype)initWithFrame:(CGRect)frame dataSource:(NSArray *)dataSource detailStyleModel:(HFFormModel *)styleModel;
 
-- (void)hfUpdateDataSourceWithBlock:(void (^)(id data))block;
+/**
+ *  回调参数
+ *
+ *  @param block block description 将修改后的数据回调
+ */
+- (void)hfUpdateDataSourceWithBlock:(void (^)(NSArray * dataSource))block;
 
 @end

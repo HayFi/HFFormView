@@ -11,16 +11,24 @@
 @interface HFFormModel : NSObject
 
 /**
- *  列表数据源
+ *  列表表头名
  */
 @property(nonatomic, copy) NSString * headName;
 
+/**
+ *  第一列标题
+ */
 @property(nonatomic, copy) NSString * form1Name;
 
+/**
+ *  第二列标题
+ */
 @property(nonatomic, copy) NSString * form2Name;
 
+/**
+ *  第三列标题
+ */
 @property(nonatomic, copy) NSString * form3Name;
-
 
 /**
  *  表头背景色
@@ -28,7 +36,7 @@
 @property(nonatomic, copy) UIColor * headColor;
 
 /**
- *  字体颜色
+ *  表头字体色
  */
 @property(nonatomic, copy) UIColor * headTintColor;
 
@@ -38,18 +46,22 @@
 @property(nonatomic, copy) UIColor * formColor;
 
 /**
- *  列表颜色
+ *  列表字体色
  */
 @property(nonatomic, copy) UIColor * formTintColor;
 
 @end
 
-
-
 @interface DetailFormModel : NSObject
 
-@property(nonatomic, copy) NSString * title;
+/**
+ *  行标题
+ */
+@property(nonatomic, copy) NSString * cellTitle;
 
+/**
+ *  以下为可修改数据
+ */
 @property(nonatomic, copy) NSString * firstSource;
 
 @property(nonatomic, copy) NSString * secondSource;

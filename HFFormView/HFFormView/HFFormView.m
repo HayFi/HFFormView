@@ -18,9 +18,11 @@
 
 @property(nonatomic, strong) LabelWithTextField * textfield;
 
+@property(nonatomic, strong) NSArray * oldDataSource;
+
 @property(nonatomic, strong) NSMutableArray * dataSource;
 
-@property(nonatomic, copy) void (^dataBlock)(id objc);
+@property(nonatomic, copy) void (^dataBlock)(NSArray * objc);
 
 @property(nonatomic, strong) UIScrollView * scrollView;
 
@@ -34,7 +36,7 @@
     if (self) {
         CGFloat width = CGRectGetWidth(self.bounds);
         CGFloat height = 48;
-        
+        _oldDataSource = [[NSArray alloc] initWithArray:dataSource];
         _dataSource = [[NSMutableArray alloc] init];
         if (_dataSource) {
             [_dataSource removeAllObjects];
@@ -86,16 +88,10 @@
         _scrollView.showsHorizontalScrollIndicator = NO;
         [self addSubview:_scrollView];
         
-        CGRect frame = self.frame;
-        frame.size.height = _scrollView.frame.size.height + nameLabel.frame.size.height;
-        self.frame = frame;
-        self.layer.borderWidth = 1;
-        self.layer.borderColor = [UIColor grayColor].CGColor;
-        
         for (NSInteger i = 0; i < _dataSource.count; i ++) {
             DetailFormModel * model = [DetailFormModel objectWithKeyValues:_dataSource[i]];
             _textfield = [[LabelWithTextField alloc] initWithFrame:CGRectMake(0, i * height, CGRectGetWidth(_scrollView.bounds), height)];
-            _textfield.nameLabel.text = model.title;
+            _textfield.nameLabel.text = model.cellTitle;
             _textfield.morTextField.text = model.firstSource;
             _textfield.afterTextField.text = model.secondSource;
             _textfield.evenTextfield.text = model.thirdSource;
@@ -106,30 +102,43 @@
             _textfield.morTextField.delegate = self;
             _textfield.afterTextField.delegate = self;
             _textfield.evenTextfield.delegate = self;
+            [_textfield.morTextField addTarget:self action:@selector(textfieldWillEndEditing:) forControlEvents:UIControlEventEditingChanged];
+            [_textfield.afterTextField addTarget:self action:@selector(textfieldWillEndEditing:) forControlEvents:UIControlEventEditingChanged];
+            [_textfield.evenTextfield addTarget:self action:@selector(textfieldWillEndEditing:) forControlEvents:UIControlEventEditingChanged];
             [_scrollView addSubview:_textfield];
         }
-
+        
+        UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(30, CGRectGetMaxY(_scrollView.frame) + 30, CGRectGetWidth(self.bounds) - 60, 30);
+        [button setTitle:@"submit to save" forState:UIControlStateNormal];
+        [button setTitleColor:HF_GreenColor forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(processChangeDatas:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:button];
+        
+        CGRect frame = self.frame;
+        frame.size.height = _scrollView.frame.size.height + nameLabel.frame.size.height + CGRectGetMaxY(button.frame) + 10;
+        self.frame = frame;
     }
     return self;
 }
 
-- (void)hfUpdateDataSourceWithBlock:(void (^)(id))block
+- (void)processChangeDatas:(UIButton *)sender
+{
+    if ([_dataSource isKindOfClass:[NSArray class]]) {
+        if ([_dataSource isEqualToArray:_oldDataSource]) {
+            NSLog(@"数据源相同不进行回调操作");
+        } else {
+            _dataBlock(_dataSource);
+        }
+    }
+}
+
+- (void)hfUpdateDataSourceWithBlock:(void (^)(NSArray *))block
 {
     _dataBlock = block;
-
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [self endEditing:YES];
-}
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField
-{
-    //    NSLog(@"%ld", textField.tag);
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField
+- (void)textfieldWillEndEditing:(UITextField *)textField
 {
     NSInteger x = (_changeTag - 1) / TEXTFIELD_TAG - 1;
     NSInteger y = (_changeTag - 1) % TEXTFIELD_TAG;
@@ -155,7 +164,11 @@
             break;
     }
     [_dataSource replaceObjectAtIndex:x withObject:model.keyValues];
-    _dataBlock(_dataSource);
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self endEditing:YES];
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
