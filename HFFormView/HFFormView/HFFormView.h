@@ -13,7 +13,7 @@
 /**
  *  初始化表格
  *
- *  @param frame      可定制位置和宽度，高度根具数据源来确定
+ *  @param frame      可定制视图位置及长宽，宽度为每一行的高度
  *  @param dataSource 数据源
  *  @param styleModel 表格样式，根据HFFormModel中的属性进行调整
  *

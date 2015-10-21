@@ -35,7 +35,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         CGFloat width = CGRectGetWidth(self.bounds);
-        CGFloat height = 48;
+        CGFloat height = frame.size.height;
         _oldDataSource = [[NSArray alloc] initWithArray:dataSource];
         _dataSource = [[NSMutableArray alloc] init];
         if (_dataSource) {
