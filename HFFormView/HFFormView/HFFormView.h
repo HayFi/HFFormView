@@ -10,4 +10,8 @@
 
 @interface HFFormView : UIView
 
+- (instancetype)initWithFrame:(CGRect)frame dataSource:(NSArray *)dataSource detailStyleModel:(HFFormModel *)styleModel;
+
+- (void)hfUpdateDataSourceWithBlock:(void (^)(id data))block;
+
 @end

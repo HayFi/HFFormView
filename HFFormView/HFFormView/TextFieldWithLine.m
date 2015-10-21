@@ -17,5 +17,14 @@
     // Drawing code
 }
 */
+- (void)drawRect:(CGRect)rect
+{
+    CGFloat height = 1;
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, HF_GreenColor.CGColor);
+    CGContextFillRect(context, CGRectMake(height * 18, CGRectGetHeight(self.frame) - height * 10, CGRectGetWidth(self.frame) - height * 36, height * 1.2));
+    CGContextSetLineWidth(context, 2);
+    
+}
 
 @end

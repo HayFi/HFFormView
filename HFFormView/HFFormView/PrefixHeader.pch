@@ -9,7 +9,19 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define HF_GreenColor [UIColor colorWithRed:21.0 / 255.0 green:156.0 / 255.0 blue:115.0 / 255.0 alpha:1]
+
+#define FONT_SIZE_15 [UIFont systemFontOfSize:15]
+
+#import <UIKit/UIKit.h>
+
+#import "MJExtension.h"
+
+#import "UITextField+Extra.h"
+
+#import "HFFormModel.h"
+
+#define lineWidth 0.5f
 
 #endif /* PrefixHeader_pch */
+

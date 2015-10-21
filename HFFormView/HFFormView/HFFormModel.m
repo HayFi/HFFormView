@@ -11,3 +11,9 @@
 @implementation HFFormModel
 
 @end
+
+@implementation DetailFormModel
+
+
+
+@end

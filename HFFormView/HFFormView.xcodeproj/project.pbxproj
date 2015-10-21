@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5541C8111BD5F1C400A42AD5 /* HFFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5541C8101BD5F1C400A42AD5 /* HFFormView.m */; settings = {ASSET_TAGS = (); }; };
+		5541C8141BD5F1D600A42AD5 /* HFFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5541C8131BD5F1D600A42AD5 /* HFFormModel.m */; settings = {ASSET_TAGS = (); }; };
+		5541C8171BD61E2400A42AD5 /* LabelWithTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5541C8161BD61E2400A42AD5 /* LabelWithTextField.m */; settings = {ASSET_TAGS = (); }; };
+		5541C81A1BD61E4500A42AD5 /* TextFieldWithLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5541C8191BD61E4500A42AD5 /* TextFieldWithLine.m */; settings = {ASSET_TAGS = (); }; };
+		5541C81D1BD6205E00A42AD5 /* UITextField+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 5541C81C1BD6205E00A42AD5 /* UITextField+Extra.m */; settings = {ASSET_TAGS = (); }; };
 		5570E9951BD5EACE006F55B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9941BD5EACE006F55B0 /* main.m */; };
 		5570E9981BD5EACE006F55B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9971BD5EACE006F55B0 /* AppDelegate.m */; };
 		5570E99B1BD5EACE006F55B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E99A1BD5EACE006F55B0 /* ViewController.m */; };
@@ -15,6 +20,17 @@
 		5570E9A31BD5EACE006F55B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5570E9A11BD5EACE006F55B0 /* LaunchScreen.storyboard */; };
 		5570E9AE1BD5EACE006F55B0 /* HFFormViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9AD1BD5EACE006F55B0 /* HFFormViewTests.m */; };
 		5570E9B91BD5EACE006F55B0 /* HFFormViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9B81BD5EACE006F55B0 /* HFFormViewUITests.m */; };
+		5570E9DE1BD5EB4E006F55B0 /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9C81BD5EB4E006F55B0 /* MJDictionaryCache.m */; settings = {ASSET_TAGS = (); }; };
+		5570E9DF1BD5EB4E006F55B0 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9CB1BD5EB4E006F55B0 /* MJExtensionConst.m */; settings = {ASSET_TAGS = (); }; };
+		5570E9E01BD5EB4E006F55B0 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9CD1BD5EB4E006F55B0 /* MJFoundation.m */; settings = {ASSET_TAGS = (); }; };
+		5570E9E11BD5EB4E006F55B0 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9CF1BD5EB4E006F55B0 /* MJProperty.m */; settings = {ASSET_TAGS = (); }; };
+		5570E9E21BD5EB4E006F55B0 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9D11BD5EB4E006F55B0 /* MJPropertyKey.m */; settings = {ASSET_TAGS = (); }; };
+		5570E9E31BD5EB4E006F55B0 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9D31BD5EB4E006F55B0 /* MJPropertyType.m */; settings = {ASSET_TAGS = (); }; };
+		5570E9E41BD5EB4E006F55B0 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9D51BD5EB4E006F55B0 /* NSObject+MJClass.m */; settings = {ASSET_TAGS = (); }; };
+		5570E9E51BD5EB4E006F55B0 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9D71BD5EB4E006F55B0 /* NSObject+MJCoding.m */; settings = {ASSET_TAGS = (); }; };
+		5570E9E61BD5EB4E006F55B0 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9D91BD5EB4E006F55B0 /* NSObject+MJKeyValue.m */; settings = {ASSET_TAGS = (); }; };
+		5570E9E71BD5EB4E006F55B0 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9DB1BD5EB4E006F55B0 /* NSObject+MJProperty.m */; settings = {ASSET_TAGS = (); }; };
+		5570E9E81BD5EB4E006F55B0 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5570E9DD1BD5EB4E006F55B0 /* NSString+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5541C80F1BD5F1C400A42AD5 /* HFFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFFormView.h; sourceTree = "<group>"; };
+		5541C8101BD5F1C400A42AD5 /* HFFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFFormView.m; sourceTree = "<group>"; };
+		5541C8121BD5F1D600A42AD5 /* HFFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFFormModel.h; sourceTree = "<group>"; };
+		5541C8131BD5F1D600A42AD5 /* HFFormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFFormModel.m; sourceTree = "<group>"; };
+		5541C8151BD61E2400A42AD5 /* LabelWithTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelWithTextField.h; sourceTree = "<group>"; };
+		5541C8161BD61E2400A42AD5 /* LabelWithTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelWithTextField.m; sourceTree = "<group>"; };
+		5541C8181BD61E4500A42AD5 /* TextFieldWithLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldWithLine.h; sourceTree = "<group>"; };
+		5541C8191BD61E4500A42AD5 /* TextFieldWithLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldWithLine.m; sourceTree = "<group>"; };
+		5541C81B1BD6205E00A42AD5 /* UITextField+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extra.h"; sourceTree = "<group>"; };
+		5541C81C1BD6205E00A42AD5 /* UITextField+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extra.m"; sourceTree = "<group>"; };
 		5570E9901BD5EACE006F55B0 /* HFFormView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFFormView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5570E9941BD5EACE006F55B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5570E9961BD5EACE006F55B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +77,30 @@
 		5570E9B41BD5EACE006F55B0 /* HFFormViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFFormViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5570E9B81BD5EACE006F55B0 /* HFFormViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFFormViewUITests.m; sourceTree = "<group>"; };
 		5570E9BA1BD5EACE006F55B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5570E9C71BD5EB4E006F55B0 /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
+		5570E9C81BD5EB4E006F55B0 /* MJDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDictionaryCache.m; sourceTree = "<group>"; };
+		5570E9C91BD5EB4E006F55B0 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		5570E9CA1BD5EB4E006F55B0 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		5570E9CB1BD5EB4E006F55B0 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		5570E9CC1BD5EB4E006F55B0 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		5570E9CD1BD5EB4E006F55B0 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		5570E9CE1BD5EB4E006F55B0 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		5570E9CF1BD5EB4E006F55B0 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		5570E9D01BD5EB4E006F55B0 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		5570E9D11BD5EB4E006F55B0 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		5570E9D21BD5EB4E006F55B0 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		5570E9D31BD5EB4E006F55B0 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		5570E9D41BD5EB4E006F55B0 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		5570E9D51BD5EB4E006F55B0 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		5570E9D61BD5EB4E006F55B0 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		5570E9D71BD5EB4E006F55B0 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		5570E9D81BD5EB4E006F55B0 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		5570E9D91BD5EB4E006F55B0 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		5570E9DA1BD5EB4E006F55B0 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		5570E9DB1BD5EB4E006F55B0 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		5570E9DC1BD5EB4E006F55B0 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		5570E9DD1BD5EB4E006F55B0 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		5570E9E91BD5EC02006F55B0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +155,22 @@
 				5570E9971BD5EACE006F55B0 /* AppDelegate.m */,
 				5570E9991BD5EACE006F55B0 /* ViewController.h */,
 				5570E99A1BD5EACE006F55B0 /* ViewController.m */,
+				5541C8121BD5F1D600A42AD5 /* HFFormModel.h */,
+				5541C8131BD5F1D600A42AD5 /* HFFormModel.m */,
+				5541C80F1BD5F1C400A42AD5 /* HFFormView.h */,
+				5541C8101BD5F1C400A42AD5 /* HFFormView.m */,
+				5541C8151BD61E2400A42AD5 /* LabelWithTextField.h */,
+				5541C8161BD61E2400A42AD5 /* LabelWithTextField.m */,
+				5541C8181BD61E4500A42AD5 /* TextFieldWithLine.h */,
+				5541C8191BD61E4500A42AD5 /* TextFieldWithLine.m */,
+				5541C81B1BD6205E00A42AD5 /* UITextField+Extra.h */,
+				5541C81C1BD6205E00A42AD5 /* UITextField+Extra.m */,
+				5570E9C61BD5EB4E006F55B0 /* MJExtension */,
 				5570E99C1BD5EACE006F55B0 /* Main.storyboard */,
 				5570E99F1BD5EACE006F55B0 /* Assets.xcassets */,
 				5570E9A11BD5EACE006F55B0 /* LaunchScreen.storyboard */,
 				5570E9A41BD5EACE006F55B0 /* Info.plist */,
+				5570E9E91BD5EC02006F55B0 /* PrefixHeader.pch */,
 				5570E9931BD5EACE006F55B0 /* Supporting Files */,
 			);
 			path = HFFormView;
@@ -138,6 +200,36 @@
 				5570E9BA1BD5EACE006F55B0 /* Info.plist */,
 			);
 			path = HFFormViewUITests;
+			sourceTree = "<group>";
+		};
+		5570E9C61BD5EB4E006F55B0 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5570E9C71BD5EB4E006F55B0 /* MJDictionaryCache.h */,
+				5570E9C81BD5EB4E006F55B0 /* MJDictionaryCache.m */,
+				5570E9C91BD5EB4E006F55B0 /* MJExtension.h */,
+				5570E9CA1BD5EB4E006F55B0 /* MJExtensionConst.h */,
+				5570E9CB1BD5EB4E006F55B0 /* MJExtensionConst.m */,
+				5570E9CC1BD5EB4E006F55B0 /* MJFoundation.h */,
+				5570E9CD1BD5EB4E006F55B0 /* MJFoundation.m */,
+				5570E9CE1BD5EB4E006F55B0 /* MJProperty.h */,
+				5570E9CF1BD5EB4E006F55B0 /* MJProperty.m */,
+				5570E9D01BD5EB4E006F55B0 /* MJPropertyKey.h */,
+				5570E9D11BD5EB4E006F55B0 /* MJPropertyKey.m */,
+				5570E9D21BD5EB4E006F55B0 /* MJPropertyType.h */,
+				5570E9D31BD5EB4E006F55B0 /* MJPropertyType.m */,
+				5570E9D41BD5EB4E006F55B0 /* NSObject+MJClass.h */,
+				5570E9D51BD5EB4E006F55B0 /* NSObject+MJClass.m */,
+				5570E9D61BD5EB4E006F55B0 /* NSObject+MJCoding.h */,
+				5570E9D71BD5EB4E006F55B0 /* NSObject+MJCoding.m */,
+				5570E9D81BD5EB4E006F55B0 /* NSObject+MJKeyValue.h */,
+				5570E9D91BD5EB4E006F55B0 /* NSObject+MJKeyValue.m */,
+				5570E9DA1BD5EB4E006F55B0 /* NSObject+MJProperty.h */,
+				5570E9DB1BD5EB4E006F55B0 /* NSObject+MJProperty.m */,
+				5570E9DC1BD5EB4E006F55B0 /* NSString+MJExtension.h */,
+				5570E9DD1BD5EB4E006F55B0 /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +362,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5570E9E31BD5EB4E006F55B0 /* MJPropertyType.m in Sources */,
 				5570E99B1BD5EACE006F55B0 /* ViewController.m in Sources */,
+				5570E9DF1BD5EB4E006F55B0 /* MJExtensionConst.m in Sources */,
+				5570E9E41BD5EB4E006F55B0 /* NSObject+MJClass.m in Sources */,
+				5570E9E71BD5EB4E006F55B0 /* NSObject+MJProperty.m in Sources */,
+				5570E9E61BD5EB4E006F55B0 /* NSObject+MJKeyValue.m in Sources */,
+				5570E9E11BD5EB4E006F55B0 /* MJProperty.m in Sources */,
 				5570E9981BD5EACE006F55B0 /* AppDelegate.m in Sources */,
+				5570E9E51BD5EB4E006F55B0 /* NSObject+MJCoding.m in Sources */,
+				5570E9E01BD5EB4E006F55B0 /* MJFoundation.m in Sources */,
+				5570E9E81BD5EB4E006F55B0 /* NSString+MJExtension.m in Sources */,
+				5541C8141BD5F1D600A42AD5 /* HFFormModel.m in Sources */,
 				5570E9951BD5EACE006F55B0 /* main.m in Sources */,
+				5541C8111BD5F1C400A42AD5 /* HFFormView.m in Sources */,
+				5570E9DE1BD5EB4E006F55B0 /* MJDictionaryCache.m in Sources */,
+				5541C8171BD61E2400A42AD5 /* LabelWithTextField.m in Sources */,
+				5570E9E21BD5EB4E006F55B0 /* MJPropertyKey.m in Sources */,
+				5541C81D1BD6205E00A42AD5 /* UITextField+Extra.m in Sources */,
+				5541C81A1BD61E4500A42AD5 /* TextFieldWithLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = HFFormView/PrefixHeader.pch;
 				INFOPLIST_FILE = HFFormView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hayfi.HFFormView;
@@ -422,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = HFFormView/PrefixHeader.pch;
 				INFOPLIST_FILE = HFFormView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hayfi.HFFormView;
@@ -496,6 +606,7 @@
 				5570E9BF1BD5EACE006F55B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5570E9C01BD5EACE006F55B0 /* Build configuration list for PBXNativeTarget "HFFormViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +615,7 @@
 				5570E9C21BD5EACE006F55B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5570E9C31BD5EACE006F55B0 /* Build configuration list for PBXNativeTarget "HFFormViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +624,7 @@
 				5570E9C51BD5EACE006F55B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

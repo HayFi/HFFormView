@@ -10,4 +10,6 @@
 
 @interface UITextField (Extra)
 
+- (void)setTextFieldStyle;
+
 @end
