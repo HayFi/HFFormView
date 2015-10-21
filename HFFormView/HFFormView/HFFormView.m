@@ -84,6 +84,7 @@
         }
         _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(view.frame), width, height * i)];
         _scrollView.contentSize = CGSizeMake(width, height * _dataSource.count);
+        _scrollView.bounces = NO;
         _scrollView.backgroundColor = styleModel.formColor;
         _scrollView.showsHorizontalScrollIndicator = NO;
         [self addSubview:_scrollView];
